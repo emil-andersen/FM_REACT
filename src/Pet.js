@@ -1,9 +1,12 @@
 import React from 'react';
 
 export default function Pet ({ navn, dyr, race }){
-    return React.createElement("div", {}, [
-        React.createElement("h1", {}, navn),
-        React.createElement("h2", {}, dyr),
-        React.createElement("h2", {}, race)
-    ]);
+  
+    return (
+        <div>
+            <h1>{navn}</h1>
+            <h2>{dyr}</h2>
+            <h2>{race}</h2>
+        </div>
+    )
 };

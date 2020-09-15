@@ -3,12 +3,12 @@ import { render } from 'react-dom'
 import Pet from './Pet';
 
 const App = () => {
-    return React.createElement(
+    /*return React.createElement(
         "div", {},
         [
             React.createElement("h1", {}, "adopt me!"),
             React.createElement(Pet, {
-                navn: "tessie",
+                navn: "Tessie",
                 dyr: "hund",
                 race: "Jack Russel Terier"
             }),
@@ -23,8 +23,19 @@ const App = () => {
                 race: "Ikke Kæreste"
             })
         ]
-    );
+    );*/
+
+        return (
+            <div>
+                <h1>adopt me!</h1>
+                <Pet navn="Tessie" dyr="hund" race="Jack Russel Terier" />
+                <Pet navn="Wiktora" dyr="Menneske" race="Menneske" />
+                <Pet navn="Fillip" dyr="Ikke Kæreste" race="Menneske" />
+            </div>
+
+        )
+
 };
 
-render(React.createElement(App),
+render(<App/>,
     document.getElementById("root"));
